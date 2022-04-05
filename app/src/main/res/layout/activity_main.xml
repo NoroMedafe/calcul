@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numberA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoA" />
+
+        <EditText
+            android:id="@+id/TextA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numberB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoB" />
+
+        <EditText
+            android:id="@+id/TextB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoResult" />
+
+        <TextView
+            android:id="@+id/TextResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Badd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="my_add_click"
+            android:text="@string/infoAdd" />
+
+        <Button
+            android:id="@+id/BSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="my_sub_click"
+            android:text="@string/infoSub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BMylt"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="my_mul_click"
+            android:text="@string/infoMult" />
+
+        <Button
+            android:id="@+id/BDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="my_div_click"
+            android:text="@string/infoDiv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BFloat"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Lfloat_click"
+            android:text="@string/infoFloat"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/BTrig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Ltrig_click"
+            android:text="@string/infoDop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lfloat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/BFadd"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_fadd_click"
+            android:text="@string/infoFadd" />
+
+        <Button
+            android:id="@+id/BFsub"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_fsub_click"
+            android:text="@string/infoFsub" />
+
+        <Button
+            android:id="@+id/BFmult"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_fmult_click"
+            android:text="@string/infoFMult" />
+
+        <Button
+            android:id="@+id/BFdiv"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:onClick="my_fdiv_click"
+            android:text="@string/infoFdiv" />
+
+        <Button
+            android:id="@+id/BPow"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:onClick="my_tpow_click"
+            android:text="@string/infoPow" />
+
+        <Button
+            android:id="@+id/Bsqrt"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:onClick="my_tsqrt_click"
+            android:text="@string/infoSqrt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ltrig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/BSin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_tsin_click"
+            android:text="@string/infoSin" />
+
+        <Button
+            android:id="@+id/BTan"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_ttan_click"
+            android:text="@string/infoTan" />
+
+        <Button
+            android:id="@+id/BCos"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:onClick="my_tcos_click"
+            android:text="@string/infoCos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Pownumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoTt" />
+
+        <EditText
+            android:id="@+id/Ttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ldegree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoTview" />
+
+        <EditText
+            android:id="@+id/Tdegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/infoview" />
+
+</LinearLayout>

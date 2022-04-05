@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="infoResult"> Result:</string >
+    <string name="infoB"> B:</string >
+    <string name="infoA"> A:</string >
+    <string name="infoAdd"> Add</string >
+    <string name="infoSub"> Substract</string >
+    <string name="infoMult"> Myltiply</string >
+    <string name="infoDiv"> Divide</string >
+
+    <string name="infoFloat"> Float</string >
+    <string name="infoSin"> Sin</string >
+    <string name="infoCos"> Cos</string >
+    <string name="infoTan"> Tan</string >
+    <string name="infoPow"> Pow</string >
+    <string name="infoSqrt"> Sqrt</string >
+    <string name="infoDop"> Trigonometry</string >
+
+    <string name="infoFadd"> F add</string >
+    <string name="infoFsub"> F Sub</string >
+    <string name="infoFMult"> F Mult</string >
+    <string name="infoFdiv"> F Div</string >
+    <string name="infoTt"> Number:</string >
+    <string name="infoTview"> Degree of</string >
+    <string name="infoview"> Инстуркция:Вводите числа в основные 2 поля и жмете на тот процесс который вам нужен
+        В меню Float вы вводите числа в основные поля, процессы POW и SQRT надо вводить значения в дополнительное окно снизу
+        Так же это относится к меню Trigonometry</string >
+
+
+
+
+
+</resources>
